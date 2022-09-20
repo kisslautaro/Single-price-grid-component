@@ -1,0 +1,49 @@
+:root{
+
+    /* Colors */
+
+    /* Primary */
+
+    --primaryCyan:hsl(179, 62%, 43%);
+    --primaryBrightYellow:hsl(71, 73%, 54%);
+
+    /* Neutral */
+
+    --neutralLightGray:hsl(204, 43%, 93%);
+    --neutralGrayishBlue:hsl(218, 22%, 67%);
+
+
+    /* Font */
+
+    --font:'Karla', sans-serif;
+
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size:  62.5%;
+    height: 100%;
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+
+
+body{
+    height: 100vh;
+    background-color: var(--neutralLightGray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    
+    width: 60rem;
+    height: 40rem;
+    background-color: white;
+}
