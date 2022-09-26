@@ -19,7 +19,7 @@
 
 }
 
-
+/* Global */
 html{
     box-sizing: border-box;
     font-size:  62.5%;
@@ -39,11 +39,197 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--font);
 }
 
+/* Container */
 .container{
-    
-    width: 60rem;
-    height: 40rem;
+    border-radius: .5rem;
+    width: 80%;
+    height: 70%;
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 2fr 1.5fr 2fr;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18);
+    
+}
+
+/* Cards */
+
+
+/* Card 1 */
+.card1{    
+    background-color: white;    
+    padding: 2rem ;
+
+}
+.card1 h1{
+    color: var(--primaryCyan);
+    font-size: 2rem;
+}
+
+.card1 h2{
+    color: var(--primaryBrightYellow);
+    font-size: 1.5rem;
+    
+}
+
+.card1 p{
+    color: var(--neutralGrayishBlue);    
+    font-size: 1.3rem;
+    line-height: 1.8;
+    
+}
+
+/* Card 2 */
+.card2{    
+    background-color: var(--primaryCyan);
+    padding: 2rem;
+}
+.card2 h2{
+    color: var(--neutralLightGray);    
+    font-size: 2rem;
+    margin: 0;
+    
+}
+
+.card2 h1{
+    
+    color: white;
+    font-size: 3rem;
+    margin: 1rem 0;
+    
+}
+
+
+.card2__plan{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.text--durability{
+    color: white;    
+    font-size: 1.5rem;
+    margin: 0 0 0 2rem;
+    opacity: 50%;
+}
+
+.text--info{
+    color: var(--neutralLightGray);
+    font-size: 1.5rem;
+    margin: 0 0 2.5rem 0;
+}
+
+.card2 button{
+    background-color: var(--primaryBrightYellow);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    height: 4.5rem;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18); 
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.18);
+}
+/* Card 3 */
+.card3{    
+    background-color: var(--primaryCyan);
+    opacity: 85%; 
+    padding: 2rem;    
+}
+
+
+.card3 h1{
+    color: var(--neutralLightGray);
+    margin: 0;
+}
+
+
+.card3 p{
+    width: 65%;
+    margin: 2rem 0 0 0;
+    font-size: 1.3rem;
+    color: white;
+    opacity: 60%;
+    line-height: 1.5;
+}
+
+/* Media Querie */
+
+@media (min-width: 768px) {
+    /* Container MQ */
+    .container{
+        border-radius: 1rem;
+        width: 63rem;
+        height: 48rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.2fr;
+        
+        
+    }
+    /* Cards MQ */
+    
+
+    /* Card 1 MQ */
+    .card1{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        background-color: white;
+        height: 100%;
+        grid-column: 1/3;
+        padding: 4rem 5rem 4rem 4rem;
+    }
+    
+    
+    .card1 h1{
+        margin: 0 0 2rem 0;
+        font-size: 2.3rem;
+    }
+    
+    .card1 h2{
+        font-size: 1.8rem;
+        
+    }
+    
+    .card1 p{
+        
+        font-size: 1.5rem;
+        
+    }
+    
+    /* Card 2 MQ */
+    .card2{
+        border-bottom-left-radius: 1rem;
+        
+        height: 100%;
+        grid-column: 1/2;
+        padding: 3.5rem 4rem 4rem 4rem;
+    }
+    .card2 h2{        
+        margin:0 0 1rem 0;
+    }
+   
+    .text--durability{
+        margin: 0 0 0 1rem;        
+    }  
+    
+    /* Card 3 MQ */
+    .card3{
+        border-bottom-right-radius: 1rem;        
+        opacity: 85%;
+        height: 100%;
+        grid-column: 2/3;
+        padding: 3.5rem 4rem 4rem 4rem;
+    }   
+    .card3 p{
+        width: 80%;     
+         color: white;
+        opacity: 60%;
+        line-height: 1.5;
+    }
+ 
+
 }
